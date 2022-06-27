@@ -17,6 +17,9 @@
 		444AF145286A504E0028EDB8 /* Parse_GramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF144286A504E0028EDB8 /* Parse_GramTests.m */; };
 		444AF14F286A504E0028EDB8 /* Parse_GramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF14E286A504E0028EDB8 /* Parse_GramUITests.m */; };
 		444AF151286A504E0028EDB8 /* Parse_GramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF150286A504E0028EDB8 /* Parse_GramUITestsLaunchTests.m */; };
+		4FC9721C7E61AA08E15EB427 /* libPods-Parse GramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD02E896F05DDF000A0AC586 /* libPods-Parse GramTests.a */; };
+		86E58575D16F960A49E4A99A /* libPods-Parse Gram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80AE5844521BA70842BCF2C /* libPods-Parse Gram.a */; };
+		CB818799507E70CDE7BF5E21 /* libPods-Parse Gram-Parse GramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052752FC3390C3B7B8B1642E /* libPods-Parse Gram-Parse GramUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052752FC3390C3B7B8B1642E /* libPods-Parse Gram-Parse GramUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parse Gram-Parse GramUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F69B3BC1ECF7056927FBA9F /* Pods-Parse Gram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram.debug.xcconfig"; path = "Target Support Files/Pods-Parse Gram/Pods-Parse Gram.debug.xcconfig"; sourceTree = "<group>"; };
 		444AF125286A504D0028EDB8 /* Parse Gram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parse Gram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444AF128286A504D0028EDB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		444AF129286A504D0028EDB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +59,13 @@
 		444AF14A286A504E0028EDB8 /* Parse GramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parse GramUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444AF14E286A504E0028EDB8 /* Parse_GramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_GramUITests.m; sourceTree = "<group>"; };
 		444AF150286A504E0028EDB8 /* Parse_GramUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_GramUITestsLaunchTests.m; sourceTree = "<group>"; };
+		4A409BCC08C94BDDE505C559 /* Pods-Parse Gram-Parse GramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram-Parse GramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DE14F3ACFA514BD1397A05B /* Pods-Parse GramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse GramTests.release.xcconfig"; path = "Target Support Files/Pods-Parse GramTests/Pods-Parse GramTests.release.xcconfig"; sourceTree = "<group>"; };
+		75F3AC8137955EDF1AC48C16 /* Pods-Parse Gram-Parse GramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram-Parse GramUITests.release.xcconfig"; path = "Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C7842401936DAEC67090B1F0 /* Pods-Parse Gram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram.release.xcconfig"; path = "Target Support Files/Pods-Parse Gram/Pods-Parse Gram.release.xcconfig"; sourceTree = "<group>"; };
+		D20838E39AFD4F19D76F720C /* Pods-Parse GramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse GramTests.debug.xcconfig"; path = "Target Support Files/Pods-Parse GramTests/Pods-Parse GramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F80AE5844521BA70842BCF2C /* libPods-Parse Gram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parse Gram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD02E896F05DDF000A0AC586 /* libPods-Parse GramTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parse GramTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E58575D16F960A49E4A99A /* libPods-Parse Gram.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC9721C7E61AA08E15EB427 /* libPods-Parse GramTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +89,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB818799507E70CDE7BF5E21 /* libPods-Parse Gram-Parse GramUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		051AC71FB1AB2A36A53CF304 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F69B3BC1ECF7056927FBA9F /* Pods-Parse Gram.debug.xcconfig */,
+				C7842401936DAEC67090B1F0 /* Pods-Parse Gram.release.xcconfig */,
+				4A409BCC08C94BDDE505C559 /* Pods-Parse Gram-Parse GramUITests.debug.xcconfig */,
+				75F3AC8137955EDF1AC48C16 /* Pods-Parse Gram-Parse GramUITests.release.xcconfig */,
+				D20838E39AFD4F19D76F720C /* Pods-Parse GramTests.debug.xcconfig */,
+				6DE14F3ACFA514BD1397A05B /* Pods-Parse GramTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		444AF11C286A504D0028EDB8 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +117,8 @@
 				444AF143286A504E0028EDB8 /* Parse GramTests */,
 				444AF14D286A504E0028EDB8 /* Parse GramUITests */,
 				444AF126286A504D0028EDB8 /* Products */,
+				051AC71FB1AB2A36A53CF304 /* Pods */,
+				C052717E26ACC47DACB47657 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +167,16 @@
 			path = "Parse GramUITests";
 			sourceTree = "<group>";
 		};
+		C052717E26ACC47DACB47657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80AE5844521BA70842BCF2C /* libPods-Parse Gram.a */,
+				052752FC3390C3B7B8B1642E /* libPods-Parse Gram-Parse GramUITests.a */,
+				FD02E896F05DDF000A0AC586 /* libPods-Parse GramTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 444AF154286A504E0028EDB8 /* Build configuration list for PBXNativeTarget "Parse Gram" */;
 			buildPhases = (
+				89C59DAC582CB899A860E57E /* [CP] Check Pods Manifest.lock */,
 				444AF121286A504D0028EDB8 /* Sources */,
 				444AF122286A504D0028EDB8 /* Frameworks */,
 				444AF123286A504D0028EDB8 /* Resources */,
+				E2B36696E2C4A3101A68EB57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 444AF157286A504E0028EDB8 /* Build configuration list for PBXNativeTarget "Parse GramTests" */;
 			buildPhases = (
+				A8BC333AB21CA29D93462888 /* [CP] Check Pods Manifest.lock */,
 				444AF13C286A504E0028EDB8 /* Sources */,
 				444AF13D286A504E0028EDB8 /* Frameworks */,
 				444AF13E286A504E0028EDB8 /* Resources */,
@@ -178,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 444AF15A286A504E0028EDB8 /* Build configuration list for PBXNativeTarget "Parse GramUITests" */;
 			buildPhases = (
+				713EC67057ABBDFD59103F4E /* [CP] Check Pods Manifest.lock */,
 				444AF146286A504E0028EDB8 /* Sources */,
 				444AF147286A504E0028EDB8 /* Frameworks */,
 				444AF148286A504E0028EDB8 /* Resources */,
+				0611EBE57611EA71D9BA21C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +306,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0611EBE57611EA71D9BA21C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		713EC67057ABBDFD59103F4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parse Gram-Parse GramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89C59DAC582CB899A860E57E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parse Gram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8BC333AB21CA29D93462888 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parse GramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B36696E2C4A3101A68EB57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parse Gram/Pods-Parse Gram-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parse Gram/Pods-Parse Gram-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parse Gram/Pods-Parse Gram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		444AF121286A504D0028EDB8 /* Sources */ = {
@@ -437,6 +586,7 @@
 		};
 		444AF155286A504E0028EDB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F69B3BC1ECF7056927FBA9F /* Pods-Parse Gram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +613,7 @@
 		};
 		444AF156286A504E0028EDB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7842401936DAEC67090B1F0 /* Pods-Parse Gram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +640,7 @@
 		};
 		444AF158286A504E0028EDB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D20838E39AFD4F19D76F720C /* Pods-Parse GramTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +658,7 @@
 		};
 		444AF159286A504E0028EDB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DE14F3ACFA514BD1397A05B /* Pods-Parse GramTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +676,7 @@
 		};
 		444AF15B286A504E0028EDB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A409BCC08C94BDDE505C559 /* Pods-Parse Gram-Parse GramUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -538,6 +692,7 @@
 		};
 		444AF15C286A504E0028EDB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75F3AC8137955EDF1AC48C16 /* Pods-Parse Gram-Parse GramUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
