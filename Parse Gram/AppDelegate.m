@@ -24,6 +24,17 @@
         }];
 
         [Parse initializeWithConfiguration:config];
+    PFObject *tryOut = [PFObject objectWithClassName:@"TryOut"];
+    tryOut[@"bday"] = @0107;
+    tryOut[@"playerName"] = @"Suino";
+    tryOut[@"cheatMode"] = @NO;
+    [tryOut saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Object saved!");
+        } else {
+            NSLog(@"Error: %@", error.description);
+        }
+    }];
 
     // Override point for customization after application launch.
     
