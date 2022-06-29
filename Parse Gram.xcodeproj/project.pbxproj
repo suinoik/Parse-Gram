@@ -19,6 +19,7 @@
 		444AF151286A504E0028EDB8 /* Parse_GramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF150286A504E0028EDB8 /* Parse_GramUITestsLaunchTests.m */; };
 		44C2A3D6286BAF800061DCAF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2A3D5286BAF800061DCAF /* HomeViewController.m */; };
 		44C2A3D9286CE9870061DCAF /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2A3D8286CE9870061DCAF /* PostViewController.m */; };
+		44C2A3DC286D05BA0061DCAF /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2A3DB286D05BA0061DCAF /* Post.m */; };
 		4FC9721C7E61AA08E15EB427 /* libPods-Parse GramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD02E896F05DDF000A0AC586 /* libPods-Parse GramTests.a */; };
 		86E58575D16F960A49E4A99A /* libPods-Parse Gram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80AE5844521BA70842BCF2C /* libPods-Parse Gram.a */; };
 		CB818799507E70CDE7BF5E21 /* libPods-Parse Gram-Parse GramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052752FC3390C3B7B8B1642E /* libPods-Parse Gram-Parse GramUITests.a */; };
@@ -65,6 +66,8 @@
 		44C2A3D5286BAF800061DCAF /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		44C2A3D7286CE9870061DCAF /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
 		44C2A3D8286CE9870061DCAF /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		44C2A3DA286D05BA0061DCAF /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		44C2A3DB286D05BA0061DCAF /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		4A409BCC08C94BDDE505C559 /* Pods-Parse Gram-Parse GramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram-Parse GramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE14F3ACFA514BD1397A05B /* Pods-Parse GramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse GramTests.release.xcconfig"; path = "Target Support Files/Pods-Parse GramTests/Pods-Parse GramTests.release.xcconfig"; sourceTree = "<group>"; };
 		75F3AC8137955EDF1AC48C16 /* Pods-Parse Gram-Parse GramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram-Parse GramUITests.release.xcconfig"; path = "Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				444AF12E286A504D0028EDB8 /* ViewController.h */,
 				444AF12F286A504D0028EDB8 /* ViewController.m */,
 				444AF131286A504D0028EDB8 /* Main.storyboard */,
+				44C2A3DA286D05BA0061DCAF /* Post.h */,
+				44C2A3DB286D05BA0061DCAF /* Post.m */,
 				44C2A3D7286CE9870061DCAF /* PostViewController.h */,
 				44C2A3D8286CE9870061DCAF /* PostViewController.m */,
 				44C2A3D4286BAF800061DCAF /* HomeViewController.h */,
@@ -430,6 +435,7 @@
 				444AF13B286A504E0028EDB8 /* main.m in Sources */,
 				44C2A3D6286BAF800061DCAF /* HomeViewController.m in Sources */,
 				444AF12D286A504D0028EDB8 /* SceneDelegate.m in Sources */,
+				44C2A3DC286D05BA0061DCAF /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
