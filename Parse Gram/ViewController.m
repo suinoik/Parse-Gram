@@ -27,6 +27,7 @@
             NSLog(@"User logged in successfully");
             
             // display view controller that needs to shown after successful login
+            [self showHomescreen];
         }
     }];
 }
@@ -44,7 +45,7 @@
             NSLog(@"Error: %@", error.localizedDescription);
         } else {
             NSLog(@"User registered successfully");
-            
+            [self showHomescreen];
             // manually segue to logged in view
         }
     }];

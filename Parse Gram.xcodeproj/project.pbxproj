@@ -17,6 +17,8 @@
 		444AF145286A504E0028EDB8 /* Parse_GramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF144286A504E0028EDB8 /* Parse_GramTests.m */; };
 		444AF14F286A504E0028EDB8 /* Parse_GramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF14E286A504E0028EDB8 /* Parse_GramUITests.m */; };
 		444AF151286A504E0028EDB8 /* Parse_GramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF150286A504E0028EDB8 /* Parse_GramUITestsLaunchTests.m */; };
+		44C2A3D6286BAF800061DCAF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2A3D5286BAF800061DCAF /* HomeViewController.m */; };
+		44C2A3D9286CE9870061DCAF /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2A3D8286CE9870061DCAF /* PostViewController.m */; };
 		4FC9721C7E61AA08E15EB427 /* libPods-Parse GramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD02E896F05DDF000A0AC586 /* libPods-Parse GramTests.a */; };
 		86E58575D16F960A49E4A99A /* libPods-Parse Gram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80AE5844521BA70842BCF2C /* libPods-Parse Gram.a */; };
 		CB818799507E70CDE7BF5E21 /* libPods-Parse Gram-Parse GramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052752FC3390C3B7B8B1642E /* libPods-Parse Gram-Parse GramUITests.a */; };
@@ -59,6 +61,10 @@
 		444AF14A286A504E0028EDB8 /* Parse GramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parse GramUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444AF14E286A504E0028EDB8 /* Parse_GramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_GramUITests.m; sourceTree = "<group>"; };
 		444AF150286A504E0028EDB8 /* Parse_GramUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_GramUITestsLaunchTests.m; sourceTree = "<group>"; };
+		44C2A3D4286BAF800061DCAF /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		44C2A3D5286BAF800061DCAF /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		44C2A3D7286CE9870061DCAF /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		44C2A3D8286CE9870061DCAF /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 		4A409BCC08C94BDDE505C559 /* Pods-Parse Gram-Parse GramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram-Parse GramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE14F3ACFA514BD1397A05B /* Pods-Parse GramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse GramTests.release.xcconfig"; path = "Target Support Files/Pods-Parse GramTests/Pods-Parse GramTests.release.xcconfig"; sourceTree = "<group>"; };
 		75F3AC8137955EDF1AC48C16 /* Pods-Parse Gram-Parse GramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram-Parse GramUITests.release.xcconfig"; path = "Target Support Files/Pods-Parse Gram-Parse GramUITests/Pods-Parse Gram-Parse GramUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +112,6 @@
 				D20838E39AFD4F19D76F720C /* Pods-Parse GramTests.debug.xcconfig */,
 				6DE14F3ACFA514BD1397A05B /* Pods-Parse GramTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +147,10 @@
 				444AF12E286A504D0028EDB8 /* ViewController.h */,
 				444AF12F286A504D0028EDB8 /* ViewController.m */,
 				444AF131286A504D0028EDB8 /* Main.storyboard */,
+				44C2A3D7286CE9870061DCAF /* PostViewController.h */,
+				44C2A3D8286CE9870061DCAF /* PostViewController.m */,
+				44C2A3D4286BAF800061DCAF /* HomeViewController.h */,
+				44C2A3D5286BAF800061DCAF /* HomeViewController.m */,
 				444AF134286A504E0028EDB8 /* Assets.xcassets */,
 				444AF136286A504E0028EDB8 /* LaunchScreen.storyboard */,
 				444AF139286A504E0028EDB8 /* Info.plist */,
@@ -417,7 +426,9 @@
 			files = (
 				444AF130286A504D0028EDB8 /* ViewController.m in Sources */,
 				444AF12A286A504D0028EDB8 /* AppDelegate.m in Sources */,
+				44C2A3D9286CE9870061DCAF /* PostViewController.m in Sources */,
 				444AF13B286A504E0028EDB8 /* main.m in Sources */,
+				44C2A3D6286BAF800061DCAF /* HomeViewController.m in Sources */,
 				444AF12D286A504D0028EDB8 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,22 +22,9 @@
             configuration.clientKey = @"WACzQgMiffhH0vW19eg0QBufZjsy1MX8oh5QRROS";
             configuration.server = @"https://parseapi.back4app.com";
         }];
-
-        [Parse initializeWithConfiguration:config];
-    PFObject *tryOut = [PFObject objectWithClassName:@"TryOut"];
-    tryOut[@"bday"] = @0107;
-    tryOut[@"playerName"] = @"Suino";
-    tryOut[@"cheatMode"] = @NO;
-    [tryOut saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (succeeded) {
-            NSLog(@"Object saved!");
-        } else {
-            NSLog(@"Error: %@", error.description);
-        }
-    }];
-
-    // Override point for customization after application launch.
     
+    [Parse initializeWithConfiguration:config];
+
     return YES;
 }
 
