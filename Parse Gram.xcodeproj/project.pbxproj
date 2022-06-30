@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44283566286E32FC002DDE5B /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44283565286E32FC002DDE5B /* DetailsViewController.m */; };
 		444AF12A286A504D0028EDB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF129286A504D0028EDB8 /* AppDelegate.m */; };
 		444AF12D286A504D0028EDB8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF12C286A504D0028EDB8 /* SceneDelegate.m */; };
 		444AF130286A504D0028EDB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444AF12F286A504D0028EDB8 /* ViewController.m */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		052752FC3390C3B7B8B1642E /* libPods-Parse Gram-Parse GramUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parse Gram-Parse GramUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F69B3BC1ECF7056927FBA9F /* Pods-Parse Gram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Gram.debug.xcconfig"; path = "Target Support Files/Pods-Parse Gram/Pods-Parse Gram.debug.xcconfig"; sourceTree = "<group>"; };
+		44283564286E32FC002DDE5B /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		44283565286E32FC002DDE5B /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		444AF125286A504D0028EDB8 /* Parse Gram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parse Gram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444AF128286A504D0028EDB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		444AF129286A504D0028EDB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				444AF12E286A504D0028EDB8 /* ViewController.h */,
 				444AF12F286A504D0028EDB8 /* ViewController.m */,
 				444AF131286A504D0028EDB8 /* Main.storyboard */,
+				44283564286E32FC002DDE5B /* DetailsViewController.h */,
+				44283565286E32FC002DDE5B /* DetailsViewController.m */,
 				44C2A3DA286D05BA0061DCAF /* Post.h */,
 				44C2A3DB286D05BA0061DCAF /* Post.m */,
 				44C2A3DD286D1DBB0061DCAF /* PostCell.h */,
@@ -440,6 +445,7 @@
 				44C2A3DF286D1DBB0061DCAF /* PostCell.m in Sources */,
 				444AF13B286A504E0028EDB8 /* main.m in Sources */,
 				44C2A3D6286BAF800061DCAF /* HomeViewController.m in Sources */,
+				44283566286E32FC002DDE5B /* DetailsViewController.m in Sources */,
 				444AF12D286A504D0028EDB8 /* SceneDelegate.m in Sources */,
 				44C2A3DC286D05BA0061DCAF /* Post.m in Sources */,
 			);
@@ -615,6 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VT37GYLU7C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Parse Gram/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -642,6 +649,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VT37GYLU7C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Parse Gram/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

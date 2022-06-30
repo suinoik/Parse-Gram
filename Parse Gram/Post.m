@@ -6,6 +6,7 @@
 //
 
 #import "Post.h"
+#import "DateTools.h"
 
 @implementation Post
 
@@ -16,6 +17,7 @@
 @dynamic image;
 @dynamic likeCount;
 @dynamic commentCount;
+@dynamic createdAtString;
 
 + (nonnull NSString *)parseClassName {
     return @"Post";
@@ -35,7 +37,6 @@
 
 + (PFFileObject *)getPFFileFromImage: (UIImage * _Nullable)image {
  
-    // check if image is not nil
     if (!image) {
         return nil;
     }

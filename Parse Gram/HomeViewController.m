@@ -12,10 +12,13 @@
 #import "PostViewController.h"
 #import "Post.h"
 #import "PostCell.h"
+#import "DateTools.h"
+#import "DetailsViewController.h"
 
 @interface HomeViewController ()<PostViewControllerDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *arrayOfPosts;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 
 @end
 
@@ -38,6 +41,13 @@
     postQuery.limit = 20;
 
     self.tableView.dataSource = self;
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(didPost) forControlEvents:UIControlEventValueChanged];
+    [self.tableView insertSubview:self.refreshControl atIndex:0];
+    
+    [self didPost];
+    [self.tableView reloadData];
 
     // fetch data asynchronously
     [postQuery findObjectsInBackgroundWithBlock:^(NSArray<Post *> * _Nullable posts, NSError * _Nullable error) {
@@ -53,14 +63,29 @@
     }];
 }
 
+- (void)beginRefresh:(UIRefreshControl *)refreshControl {
+     [self.tableView reloadData];
+
+}
+
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.\
+    
     
     if([[segue identifier] isEqualToString:@"composeSegue"]){
         UINavigationController *navigationController = [segue destinationViewController];
         PostViewController *postController = (PostViewController*)navigationController.topViewController;
         postController.delegate = self;
+        
+    } else if ([[segue identifier] isEqualToString:@"detailSegue"]) {
+        DetailsViewController *detailsViewController = [segue destinationViewController];
+        PostCell *cell = sender;
+        detailsViewController.post = cell.post;
+        
+        
+        
+        
     }
 }
 
@@ -72,13 +97,13 @@
 
     self.tableView.dataSource = self;
 
-    // fetch data asynchronously
     [postQuery findObjectsInBackgroundWithBlock:^(NSArray<Post *> * _Nullable posts, NSError * _Nullable error) {
         if (posts) {
             // do something with the data fetched
             self.arrayOfPosts = (NSMutableArray *)posts;
             [self.tableView reloadData];
-            
+            [self.refreshControl endRefreshing];
+
         }
         else {
             // handle error
@@ -88,20 +113,13 @@
 
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     PostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PostCell"];
     
     Post *post = self.arrayOfPosts[indexPath.row];
+    cell.post = post;
     PFFileObject *photoImageFile = post.image;
     [photoImageFile getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError * _Nullable error) {
             if (data) {
@@ -109,6 +127,12 @@
             }
     }];
     cell.pictureCaption.text = post.caption;
+    cell.userName.text = post.author.username;
+    NSLog(@"%@", post.createdAt);
+    
+    
+    cell.dateLabel.text = [post.createdAt shortTimeAgoSinceNow];
+    
     return cell;
 }
 

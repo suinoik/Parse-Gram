@@ -7,6 +7,7 @@ target 'Parse Gram' do
 
   # Pods for YOUR_APP
   pod 'Parse'
+  pod 'DateTools'
 
 
 
