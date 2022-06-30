@@ -10,9 +10,12 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
 #import "PostViewController.h"
+#import "Post.h"
+#import "PostCell.h"
 
-
-@interface HomeViewController ()<PostViewControllerDelegate>
+@interface HomeViewController ()<PostViewControllerDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *arrayOfPosts;
 
 @end
 
@@ -28,6 +31,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // construct PFQuery
+    PFQuery *postQuery = [Post query];
+    [postQuery orderByDescending:@"createdAt"];
+    [postQuery includeKey:@"author"];
+    postQuery.limit = 20;
+
+    self.tableView.dataSource = self;
+
+    // fetch data asynchronously
+    [postQuery findObjectsInBackgroundWithBlock:^(NSArray<Post *> * _Nullable posts, NSError * _Nullable error) {
+        if (posts) {
+            // do something with the data fetched
+            self.arrayOfPosts = (NSMutableArray *)posts;
+            [self.tableView reloadData];
+            
+        }
+        else {
+            // handle error
+        }
+    }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -41,8 +64,26 @@
     }
 }
 
-- (void) didPost:(PFObject *)post {
-    
+- (void) didPost {
+    PFQuery *postQuery = [Post query];
+    [postQuery orderByDescending:@"createdAt"];
+    [postQuery includeKey:@"author"];
+    postQuery.limit = 20;
+
+    self.tableView.dataSource = self;
+
+    // fetch data asynchronously
+    [postQuery findObjectsInBackgroundWithBlock:^(NSArray<Post *> * _Nullable posts, NSError * _Nullable error) {
+        if (posts) {
+            // do something with the data fetched
+            self.arrayOfPosts = (NSMutableArray *)posts;
+            [self.tableView reloadData];
+            
+        }
+        else {
+            // handle error
+        }
+    }];
 }
 
 
@@ -56,5 +97,23 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    PostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PostCell"];
+    
+    Post *post = self.arrayOfPosts[indexPath.row];
+    PFFileObject *photoImageFile = post.image;
+    [photoImageFile getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError * _Nullable error) {
+            if (data) {
+                cell.picturePosted.image = [UIImage imageWithData:data];
+            }
+    }];
+    cell.pictureCaption.text = post.caption;
+    return cell;
+}
+
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.arrayOfPosts.count;
+}
 
 @end
